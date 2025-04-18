@@ -1,0 +1,105 @@
+[15:47, 18/04/2025] Prachita: <html>
+    <head>
+        <title>Foodie Place</title>
+        <link rel="stylesheet" href="prac7.css">
+    </head>
+    <body>
+        <h1>Food Carnival</h1>
+        <nav>
+            <ul>
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>Order</li></a>
+                <a href="#"><li>Near</li></a>
+                <a href="#"><li>About</li></a>
+            </ul>
+        </nav>
+        <section class="items">
+            <div class="item">
+                <img src="momo.jpg">
+                <h4>Momos</h4>
+                <button>Order</button>
+            </div>
+            <div class="item">
+                <img src="pizza.jpg">
+                <h4>Pizza</h4>
+                <button>Order</button>
+            </div>
+            <div class="item">
+                <img src="icecream.jpg">
+                <h4>Icecream</h4>
+                <button>Order</button>
+            </div>
+            <div class="item">
+                <img src="noodles.jpg">
+                <h4>Noodles</h4>
+                <button>Order</button>
+            </div>
+            <div class="item">
+                <img src="dessert.jpg">
+                <h4>Dessert</h4>
+                <button>Order</button>
+            </div>
+            <div class="item">
+                <img src="pasta.jpg">
+                <h4>Pasta</h4>
+                <button>Order</button>
+            </div>
+            
+        </section>
+        <footer>
+            <div class="footer-content"></div>
+        </footer>
+
+    </body>
+
+</html>
+[15:48, 18/04/2025] Prachita: {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    color: crimson;
+    padding: 20px;
+}
+nav{
+    background-color: indianred;
+    display: grid;
+    place-items: center;
+}
+nav ul{
+    list-style-type:none;
+}
+nav ul a{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color:black;
+    font-size: 18px;
+}
+nav ul a:hover{
+    background-color: indianred;
+    color: white;
+}
+.items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding:  30px 20px;
+    grid-row-gap: 30px;
+    grid-column-gap: 20px;
+}
+    .item img{
+        width: 300px;
+        height: 300px;
+        cursor: pointer;
+
+    }
+    .item img:hover{
+        transform: scale(1.08);
+    }
+    .item button{
+        background-color: indianred;
+        color: white;
+    }
