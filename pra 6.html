@@ -1,0 +1,160 @@
+<html lang="en">
+
+<head>
+    <title>Tribute to Aryabhatta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #f3f6fb;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(to right, #003366, #336699);
+            padding: 50px 20px;
+            text-align: center;
+            color: white;
+        }
+        
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 20px;
+            font-style: italic;
+        }
+        
+        .scroll-banner {
+            background-color: #004080;
+            color: #fff;
+            height: 40px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .scroll-banner p {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            line-height: 40px;
+            animation: scroll-up 8s linear infinite;
+            font-weight: 600;
+        }
+        
+        @keyframes scroll-up {
+            0% {
+                top: 100%;
+            }
+            100% {
+                top: -100%;
+            }
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .image-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .image-section img {
+            width: 270px;
+            border-radius: 14px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .image-section img:hover {
+            transform: scale(1.06);
+        }
+        
+        .content {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .quote-box {
+            background: #f0f8ff;
+            border-left: 6px solid #004080;
+            padding: 20px;
+            margin: 30px 0;
+            font-style: italic;
+            color: #003366;
+            font-size: 17px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-style: italic;
+            color: #777;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 36px;
+            }
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero section -->
+    <header>
+        <h1>Tribute to Aryabhatta</h1>
+        <p>Remembering the Father of Indian Mathematics and Astronomy</p>
+    </header>
+
+    <!-- Scroll banner -->
+    <div class="scroll-banner">
+        <p>🌟 Aryabhatta - The Timeless Genius Who Introduced Zero to the World 🌟</p>
+    </div>
+
+    <div class="container">
+        <div class="image-section">
+            <img src="data:image/jpeg;base64,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"alt="Aryabhatta">
+        </div>
+
+        <div class="content">
+            <p><strong>Aryabhatta</strong> (born in 476 CE) was one of the most influential mathematicians and astronomers in Indian history. His work laid the foundation for many scientific advancements that the world would later build upon.</p>
+
+            <p>At just 23, he authored the legendary work <em>Āryabhaṭīya</em>, where he presented groundbreaking concepts in mathematics and astronomy, including the use of zero and the place value system.</p>
+
+            <p>His calculations of the value of π (pi), his understanding of trigonometry, and his theories on the rotation of the Earth were centuries ahead of their time.</p>
+
+            <div class="quote-box">
+                “He who knows the true positions of the planets and the movements of the heavens, holds the key to the mysteries of the universe.”
+            </div>
+
+            <p>Even today, Aryabhatta’s contributions continue to inspire scholars, scientists, and students across the globe. His intellectual legacy is a beacon of India's golden scientific age.</p>
+        </div>
+
+        <div class="footer">
+            — A mind beyond millennia —
+        </div>
+    </div>
+
+</body>
+
+</html>
